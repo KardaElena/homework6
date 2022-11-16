@@ -5,15 +5,15 @@
 // -7, 567, 89, 223-> 3
 
 
-int CountPositiveNumbers (int [] array)
+int CountPositiveNumbers(int[] array)
 {
-   int [] arr = array; 
-   int count = 0;
+    int[] arr = array;
+    int count = 0;
     for (int i = 0; i < arr.Length; i++)
     {
         if (arr[i] > 0) count++;
     }
-return count;
+    return count;
 }
 
 Console.Clear();
@@ -27,9 +27,9 @@ if (lenght <= 0)
     lenght = int.Parse(Console.ReadLine() ?? "0");
 }
 
-int [] numbers = new int[lenght];
+int[] numbers = new int[lenght];
 
-for (int i = 0; i <numbers.Length; i++)
+for (int i = 0; i < numbers.Length; i++)
 {
     Console.WriteLine("\nВведите число: ");
     numbers[i] = int.Parse(Console.ReadLine() ?? "0");

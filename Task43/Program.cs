@@ -3,18 +3,14 @@
 
 // // b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
 
-// Алгоритм решения:
-// 1) Вычесть из первого уравнения второе
-// 2) Найти x
-// 3) Найти y
 
-double FindingX (double b1, double k1, double b2, double k2)
+double FindingX(double b1, double k1, double b2, double k2)
 {
     double x = (b2 - b1) / (k1 - k2);
     return x;
 }
 
-double FindingY (double b1, double k1, double b2, double k2, double x)
+double FindingY(double b1, double k1, double b2, double k2, double x)
 {
     double y = k1 * x + b1;
     return y;
